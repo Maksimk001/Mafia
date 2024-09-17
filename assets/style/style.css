@@ -5,9 +5,12 @@
     font-family: sans-serif;
     color: #fff;
 }
+body {
+    background-color: #000;
+}
 section.cart {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -54,7 +57,7 @@ section.cart {
     button.link {
         width: 60px;
         height: 60px;
-        background-color: #000;
+        background: none;
         border: none;
         color: #fff;
         position: fixed;
@@ -137,6 +140,9 @@ section.cart {
         position: absolute;
         top: 450px;
         right: 20px;
+    }
+    div.block:last-child {
+        margin-bottom: 50px;
     }
 
 
