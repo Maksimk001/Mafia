@@ -140,21 +140,22 @@ function addLive(rolsarr) {
 
 function initializing() {
 
+let block = document.querySelectorAll('.block')
 let sname = document.querySelectorAll('.block p') 
 let button = document.querySelectorAll('button.kill')
 let inputleft = document.querySelectorAll('div.block input.left')
 let inputright = document.querySelectorAll('div.block input.right')
 
-console.log(button[0]);
-for (let i = 0; i < button.length; i++) {
-    button[i].onclick = function() {
-        killme()
+
+    for (let i = 0; i < button.length; i++) {
+        button[i].onclick = function() {
+            killme()
+        }
+        function killme() {
+                button[i].style.backgroundColor = 'red'
+                sname[i].style.color = 'red'
+                inputleft[i].style.border = '1px solid red'
+                inputright[i].style.border = '1px solid red'
+        }
     }
-    function killme() {
-            button[i].style.backgroundColor = 'red'
-            sname[i].style.color = 'red'
-            inputleft[i].style.border = '1px solid red'
-            inputright[i].style.border = '1px solid red'
-    }
-}
 }
