@@ -8,92 +8,145 @@
     <title>Мафия</title>
 </head>
 <body>
+    <div class="setting">
+        <h1>Настройки</h1>
+
+        <h1 class="rols">Выберите роли</h1>
+
+        <div class="roles" id="mainclick">
+            <p class="name">Маньяк</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <div class="roles" id="mafiaclick">
+            <p class="name">Мафия</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <div class="roles" id="doctorclick">
+            <p class="name">Доктор</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <div class="roles" id="shref">
+            <p class="name">Комисар</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <div class="roles" id="love">
+            <p class="name">Любовница</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <div class="roles" id="funny">
+            <p class="name">Обыватель</p>
+            <button class="minus">-</button>
+            <p class="kol">0</p>
+            <button class="plus">+</button>
+        </div>
+
+        <button class="save">Сохранить</button>
+    </div>
+
     <section class="cart">
-        <div class="table">
-            <p>Игрок</p>
-            <p>Роль</p>
-            <p>Действие</p>
-        </div>
-        <div class="cart">
+        
+            <div class="table">
+                <p>Игрок</p>
+                <p>Роль</p>
+                <p>Действие</p>
+            </div>
+            <div class="cart">
+                
+                <div class="block" id="mafia">
+                    <input type="text" class="left">
+                    <p>Мафия</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="mafia">
+                    <input type="text" class="left">
+                    <p>Мафия</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="doctor">
+                    <input type="text" class="left">
+                    <p>Доктор</p>
+                    <input type="text" class="right"> 
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="shref">
+                    <input type="text" class="left">
+                    <p>Комисар</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="live">
+                    <input type="text" class="left">
+                    <p>Любовница</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="killer">
+                    <input type="text" class="left">
+                    <p>Маньяк</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="funny">
+                    <input type="text" class="left">
+                    <p>Обыватель</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="funny">
+                    <input type="text" class="left">
+                    <p>Обыватель</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="funny">
+                    <input type="text" class="left">
+                    <p>Обыватель</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="funny">
+                    <input type="text" class="left">
+                    <p>Обыватель</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+
+                <div class="block" id="funny">
+                    <input type="text" class="left">
+                    <p>Обыватель</p>
+                    <input type="text" class="right">
+                    <button class="kill"></button>
+                </div>
+            </div>
             
-            <div class="block" id="mafia">
-                <input type="text" class="left">
-                <p>Мафия</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="mafia">
-                <input type="text" class="left">
-                <p>Мафия</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="doctor">
-                <input type="text" class="left">
-                <p>Доктор</p>
-                <input type="text" class="right"> 
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="shref">
-                <input type="text" class="left">
-                <p>Комисар</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="live">
-                <input type="text" class="left">
-                <p>Любовница</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="killer">
-                <input type="text" class="left">
-                <p>Маньяк</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="funny">
-                <input type="text" class="left">
-                <p>Обыватель</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="funny">
-                <input type="text" class="left">
-                <p>Обыватель</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="funny">
-                <input type="text" class="left">
-                <p>Обыватель</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="funny">
-                <input type="text" class="left">
-                <p>Обыватель</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-
-            <div class="block" id="funny">
-                <input type="text" class="left">
-                <p>Обыватель</p>
-                <input type="text" class="right">
-                <button class="kill"></button>
-            </div>
-        </div>
-        <button class="link"><img src="./assets/image/settings.svg" alt=""></button>
+            <button class="link"><img src="./assets/image/settings.svg" alt=""></button>
+        
     </section>
 
     
