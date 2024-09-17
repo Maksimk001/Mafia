@@ -45,18 +45,21 @@ savebutton.onclick = function() {
     saveroles()
 }
 function saveroles() {
-    savebutton.style.backgroundColor = 'gray'
-    
-    let rolsarr = {
-        'Killer': rolskol[0].textContent,
-        'Mafia': rolskol[1].textContent,
-        'Doctor': rolskol[2].textContent,
-        'Shreif': rolskol[3].textContent,
-        'Love': rolskol[4].textContent,
-        'funny': rolskol[5].textContent
-    }
-    console.log(rolsarr);
-    addRoles(rolsarr)
+    if (savebuttonstat == true) {
+        savebutton.style.backgroundColor = 'gray'
+        
+        let rolsarr = {
+            'Killer': rolskol[0].textContent,
+            'Mafia': rolskol[1].textContent,
+            'Doctor': rolskol[2].textContent,
+            'Shreif': rolskol[3].textContent,
+            'Love': rolskol[4].textContent,
+            'funny': rolskol[5].textContent
+        }
+        savebuttonstat = false
+        console.log(rolsarr);
+        addRoles(rolsarr)
+    } 
 }
 
 function addRoles(rolsarr) {
