@@ -46,6 +46,7 @@ savebutton.onclick = function() {
 }
 function saveroles() {
     if (savebuttonstat == true) {
+        if (rolskol[0].textContent + rolskol[1].textContent + rolskol[2].textContent + rolskol[3].textContent + rolskol[4].textContent + rolskol[5].textContent != 0) {
         savebutton.style.backgroundColor = 'gray'
         
         let rolsarr = {
@@ -59,6 +60,10 @@ function saveroles() {
         savebuttonstat = false
         console.log(rolsarr);
         addRoles(rolsarr)
+        }
+        else {
+            alert('Выбирите роли!')
+        }
     } 
 }
 
@@ -137,28 +142,41 @@ function addLive(rolsarr) {
         </div>`;
     }
 
-    initializing()
+    initializing(rolsarr)
 }
 
 
-function initializing() {
+function initializing(rolsarr) {
 
-let block = document.querySelectorAll('.block')
-let sname = document.querySelectorAll('.block p') 
-let button = document.querySelectorAll('button.kill')
-let inputleft = document.querySelectorAll('div.block input.left')
-let inputright = document.querySelectorAll('div.block input.right')
+    let block = document.querySelectorAll('.block')
+    let sname = document.querySelectorAll('.block p') 
+    let button = document.querySelectorAll('button.kill')
+    let inputleft = document.querySelectorAll('div.block input.left')
+    let inputright = document.querySelectorAll('div.block input.right')
+    itog()
 
-
-    for (let i = 0; i < button.length; i++) {
-        button[i].onclick = function() {
-            killme()
+        for (let i = 0; i < button.length; i++) {
+            button[i].onclick = function() {
+                killme()
+            }
+            function killme() {
+                    block[i].style.display = 'none'
+                    button[i].style.backgroundColor = 'red'
+                    sname[i].style.color = 'red'
+                    inputleft[i].style.border = '1px solid red'
+                    inputright[i].style.border = '1px solid red'
+                    itog()
+            }
         }
-        function killme() {
-                button[i].style.backgroundColor = 'red'
-                sname[i].style.color = 'red'
-                inputleft[i].style.border = '1px solid red'
-                inputright[i].style.border = '1px solid red'
+        function itog() {
+            let itog = document.querySelectorAll('.numbersrols')
+            let Maf = document.querySelectorAll('#Mafia')
+            let Kil = document.querySelectorAll('#killer')
+
+
+            itog[0].textContent = block.length
+            itog[1].textContent = Maf.length + Kil.length
+            itog[2].textContent = itog[0].textContent - itog[1].textContent
         }
-    }
 }
+
